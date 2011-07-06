@@ -1,1 +1,9 @@
 vimrc i'm using, enjoy~~
+
+this work is based on http://amix.dk/blog/post/19486#The-ultimate-vim-configuration-vimrc
+
+add functions:
+
+(1) ctrl + right arrow or ctrl + left arrow to switch files in the buffuer
+
+(2) add matchit.vim plugin, which is useful in html/xml edit for fast location tag
