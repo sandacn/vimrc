@@ -270,12 +270,6 @@ cnoremap <C-K>		<C-U>
 cnoremap <C-P> <Up>
 cnoremap <C-N> <Down>
 
-" Useful on some European keyboards
-map ½ $
-imap ½ $
-vmap ½ $
-cmap ½ $
-
 
 func! Cwd()
   let cwd = getcwd()
