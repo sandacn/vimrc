@@ -256,6 +256,8 @@ cno $h e ~/
 cno $d e ~/Desktop/
 cno $j e ./
 cno $c e <C-\>eCurrentFileDir("e")<cr>
+" $b is very useful for babytree edit code
+cno $b e /var/www/baby/
 
 " $q is super useful when browsing on the command line
 cno $q <C-\>eDeleteTillSlash()<cr>
