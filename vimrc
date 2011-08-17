@@ -565,3 +565,8 @@ noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 "Quickly open a buffer for scripbble
 map <leader>q :e ~/buffer<cr>
+
+" PHP-Documentor key map
+:imap <C-D> <ESC>:call PhpDocSingle()<CR>i
+:nmap <C-D> :call PhpDocSingle()<CR>
+:vmap <C-D> :call PhpDocRange()<CR>
