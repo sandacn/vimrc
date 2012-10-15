@@ -1,5 +1,10 @@
 vimrc i'm using, enjoy~~
 
+
+HOW TO INSTALL
+(1) append __vimrc to your ~/.vimrc
+(2) run install.sh 
+
 this work is based on http://amix.dk/blog/post/19486#The-ultimate-vim-configuration-vimrc
 
 add functions:
