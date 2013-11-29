@@ -257,7 +257,8 @@ cno $d e ~/Desktop/
 cno $j e ./
 cno $c e <C-\>eCurrentFileDir("e")<cr>
 " $b is very useful for babytree edit code
-cno $b e /var/www/baby/
+cno $b e /data/ryan/www/baby/
+cno $m e /data/ryan/git/mobile/
 
 " $q is super useful when browsing on the command line
 cno $q <C-\>eDeleteTillSlash()<cr>
@@ -321,6 +322,10 @@ map <leader>ba :1,300 bd!<cr>
 " Use the arrows to something usefull
 map <C-right> :bn<cr>
 map <C-left> :bp<cr>
+
+map <S-right> :bn<cr>
+map <S-left> :bp<cr>
+
 
 " Tab configuration
 map <leader>tn :tabnew! %<cr>
@@ -538,14 +543,15 @@ map <leader>f :MRU<CR>
 
 
 """"""""""""""""""""""""""""""
-" => Command-T
+" => Ctrlp plugin
 """"""""""""""""""""""""""""""
-let g:CommandTMaxHeight = 15
-let g:CommandTCancelMap = '<Esc>'
-let g:CommandTMaxFiles = 20000
-set wildignore+=*.o,*.obj,.git,*.pyc,*.gif,*.jpg,*.png,*.swf,Entries,Repository,Root,Entries.Log
-noremap <leader>y :CommandTFlush<cr>
-"noremap! <leader>j :PeepOpen<cr>
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_custom_ignore = {
+            \ 'dir' : '\v[\/]\.(git|hg|svn)$',
+            \ 'file' : '\v\.(png|jpg|gif|swf)$',
+            \}
+
 
 
 """"""""""""""""""""""""""""""

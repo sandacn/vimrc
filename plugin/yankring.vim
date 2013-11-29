@@ -205,8 +205,9 @@ if !exists('g:yankring_paste_check_default_buffer')
     let g:yankring_paste_check_default_buffer = 1
 endif
 
+" comment yanking replace hot key for ctrlp plugin
 if !exists('g:yankring_replace_n_pkey')
-    let g:yankring_replace_n_pkey = '<C-P>'
+    let g:yankring_replace_n_pkey = ''
 endif
 
 if !exists('g:yankring_replace_n_nkey')
