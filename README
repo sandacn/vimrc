@@ -2,13 +2,23 @@ vimrc i'm using, enjoy~~
 
 
 HOW TO INSTALL
-(1) append __vimrc to your ~/.vimrc
-(2) run install.sh 
+(1) cp vimrc ~/.vim_runtime
+(2) cd ~/.vim_runtime append __vimrc to your ~/.vimrc
+(3) run install.sh 
 
 this work is based on http://amix.dk/blog/post/19486#The-ultimate-vim-configuration-vimrc
 
 add functions:
 
 (1) ctrl + right arrow or ctrl + left arrow to switch files in the buffuer
+如果你用的是SecureCRT，那么需要用Mapkey来使用这两个功能：
+    * emulate as xterm
+    * map key ctrl + left arrow == \033[1;5C    ctrl + right arrow == \033[1;5D
 
 (2) add matchit.vim plugin, which is useful in html/xml edit for fast location tag
+
+
+(3) add go lang support
+
+(4) add plugin ctrlp, how to use : https://github.com/kien/ctrlp.vim
+    default add Ctrl+p as shortcut to invoke ctrlp plugin
