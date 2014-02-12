@@ -258,7 +258,7 @@ cno $j e ./
 cno $c e <C-\>eCurrentFileDir("e")<cr>
 " $b is very useful for babytree edit code
 cno $b e /data/ryan/www/baby/
-cno $m e /data/ryan/git/mobile/
+cno $r e <C-\>eCwd()<cr>
 
 " $q is super useful when browsing on the command line
 cno $q <C-\>eDeleteTillSlash()<cr>
@@ -548,9 +548,11 @@ map <leader>f :MRU<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_custom_ignore = {
-            \ 'dir' : '\v[\/]\.(git|hg|svn)$',
+            \ 'dir' : '\v\.(git|hg|svn)',
             \ 'file' : '\v\.(png|jpg|gif|swf)$',
             \}
+let g:ctrlp_user_command = 'find  %s  -type f ' 
+"set wildignore+=*/.git/*
 
 
 

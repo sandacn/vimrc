@@ -14,11 +14,11 @@ add functions:
 如果你用的是SecureCRT，那么需要用Mapkey来使用这两个功能：
     * emulate as xterm
     * map key ctrl + left arrow == \033[1;5C    ctrl + right arrow == \033[1;5D
-
+ 
 (2) add matchit.vim plugin, which is useful in html/xml edit for fast location tag
-
 
 (3) add go lang support
 
-(4) add plugin ctrlp, how to use : https://github.com/kien/ctrlp.vim
+(4) (testing)add plugin ctrlp, how to use : https://github.com/kien/ctrlp.vim
     default add Ctrl+p as shortcut to invoke ctrlp plugin
+

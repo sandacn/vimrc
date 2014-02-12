@@ -122,8 +122,8 @@ autocmd BufWritePost *.pl !perl -c <afile>
 autocmd BufWritePost *.perl !perl -c <afile>
 autocmd BufWritePost *.xml !xmllint --noout <afile>
 autocmd BufWritePost *.xsl !xmllint --noout <afile>
-"autocmd BufWritePost *.js !~/bin/jsl -conf ~/jslint/jsl.default.conf -nologo -nosummary -process <afile>
-autocmd BufWritePost *.js !~/bin/jsl -nologo -nosummary -process <afile>
+autocmd BufWritePost *.js !~/bin/jsl -conf ~/jslint/jsl.default.conf -nologo -nosummary -process <afile>
+"autocmd BufWritePost *.js !~/bin/jsl -nologo -nosummary -process <afile>
 autocmd BufWritePost *.rb !ruby -c <afile>
 autocmd BufWritePost *.pp !puppet --parseonly <afile>
 augroup en
