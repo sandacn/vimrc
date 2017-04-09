@@ -2,7 +2,7 @@ vimrc i'm using, enjoy~~
 
 
 HOW TO INSTALL
-(1) cp vimrc ~/.vim_runtime
+(1) cp -r vimrc ~/.vim_runtime
 (2) cd ~/.vim_runtime append __vimrc to your ~/.vimrc
 (3) run install.sh 
 

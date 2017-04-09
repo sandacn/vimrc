@@ -81,7 +81,7 @@ let php_htmlInStrings = 1
 let php_noShortTags = 1
 let php_parent_error_close = 1
 let php_parent_error_open = 1
-let php_folding = 1
+let php_folding = 0
 
 " some common helpful settings 
 set shiftwidth=2
@@ -273,6 +273,11 @@ map! =if if (<Right> {<Down><xEnd> else {<Up><Up><Up><Up><Up><Up><ESC>/)<CR>i
 
 " }}} Mappings for autogeneration of PHP code
 
+"让vim记忆上次编辑的位置
+autocmd BufReadPost *
+            \ if line("'\"")>0&&line("'\"")<=line("$") |
+            \    exe "normal g'\"" |
+            \ endif
 
 
 set expandtab
